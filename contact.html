@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us – Cherry Digital Pros</title>
+  <meta name="description" content="Contact Cherry Digital Pros for computer repair, networking, and IT services in Cincinnati, OH. Call or text 513-568-5568." />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .page-hero {
+      background: linear-gradient(135deg, #1a2a4a 0%, #2a0a0a 100%);
+      color: #fff;
+      padding: 60px 20px 50px;
+      text-align: center;
+    }
+    .page-hero h1 { font-size: 2.4rem; font-weight: 900; margin-bottom: 10px; }
+    .page-hero h1 span { color: #cc0000; }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+    @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
+
+    .contact-form-wrap h2 { font-size: 1.4rem; font-weight: 800; color: #1a1a1a; margin-bottom: 20px; }
+    .form-group { margin-bottom: 18px; }
+    .form-group label { display: block; font-size: 0.88rem; font-weight: 600; color: #333; margin-bottom: 6px; }
+    .form-group input, .form-group textarea, .form-group select {
+      width: 100%;
+      padding: 11px 14px;
+      border: 1.5px solid #ddd;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      font-family: inherit;
+      color: #333;
+      transition: border-color 0.2s;
+    }
+    .form-group input:focus, .form-group textarea:focus {
+      outline: none;
+      border-color: #cc0000;
+    }
+    .form-group textarea { resize: vertical; min-height: 120px; }
+    .form-submit { width: 100%; padding: 13px; font-size: 1rem; }
+
+    .contact-details h2 { font-size: 1.4rem; font-weight: 800; color: #1a1a1a; margin-bottom: 20px; }
+    .big-phone {
+      font-size: 2rem;
+      font-weight: 900;
+      color: #cc0000;
+      margin-bottom: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    Call or Text Us Today: <a href="tel:5135685568">513-568-5568</a> &nbsp;|&nbsp; Serving Cincinnati, OH &amp; Tri-State Area
+  </div>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">Cherry <span>Digital</span> Pros</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services/Products</a></li>
+          <li><a href="managed.html">Managed Services</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="payments.html">Payments</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html" class="active">Contact Us</a></li>
+          <li><a href="tel:5135685568" class="nav-phone">513-568-5568</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <h1><span>Contact</span> Us</h1>
+    <p>We will be in touch shortly!</p>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-form-wrap">
+          <h2>Send Us a Message</h2>
+          <form action="mailto:info@cherrydigitalpros.com" method="post" enctype="text/plain">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Smith" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="513-000-0000" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="service">Service Needed</label>
+              <select id="service" name="service">
+                <option value="">Select a service...</option>
+                <option>Computer Repair</option>
+                <option>Laptop Repair</option>
+                <option>Virus Removal</option>
+                <option>Data Recovery</option>
+                <option>Networking / Cabling</option>
+                <option>Managed Services</option>
+                <option>Remote Support</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Describe your issue or question..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-red form-submit">Send Message</button>
+          </form>
+        </div>
+
+        <div class="contact-details">
+          <h2>Contact Information</h2>
+          <div class="big-phone"><a href="tel:5135685568" style="color:#cc0000;">📞 513-568-5568</a></div>
+
+          <div class="contact-item" style="margin-bottom:16px;">
+            <div class="ci-icon">📍</div>
+            <div class="ci-text">
+              <strong>Service Area</strong>
+              <span>Cincinnati, OH &amp; Tri-State Area</span>
+            </div>
+          </div>
+          <div class="contact-item" style="margin-bottom:16px;">
+            <div class="ci-icon">🕐</div>
+            <div class="ci-text">
+              <strong>Availability</strong>
+              <span>Call or Text Anytime</span>
+            </div>
+          </div>
+          <div class="contact-item" style="margin-bottom:32px;">
+            <div class="ci-icon">🖥️</div>
+            <div class="ci-text">
+              <strong>Remote Support</strong>
+              <span><a href="https://sos.splashtop.com" target="_blank" rel="noopener">sos.splashtop.com</a></span>
+            </div>
+          </div>
+
+          <h3 style="font-size:1.1rem;font-weight:700;color:#1a1a1a;margin-bottom:14px;">Service Areas</h3>
+          <div class="areas-list">
+            <span class="area-tag">Cincinnati, OH</span>
+            <span class="area-tag">Newport, KY</span>
+            <span class="area-tag">Covington, KY</span>
+            <span class="area-tag">Hamilton, OH</span>
+            <span class="area-tag">West Chester, OH</span>
+            <span class="area-tag">Fort Thomas, KY</span>
+            <span class="area-tag">Fairfield, OH</span>
+            <span class="area-tag">Erlanger, KY</span>
+            <span class="area-tag">Loveland, OH</span>
+            <span class="area-tag">Florence, KY</span>
+            <span class="area-tag">Bellevue, KY</span>
+            <span class="area-tag">Mason, OH</span>
+            <span class="area-tag">Monroe, OH</span>
+            <span class="area-tag">Milford, OH</span>
+            <span class="area-tag">Harrison, OH</span>
+            <span class="area-tag">Burlington, KY</span>
+            <span class="area-tag">Lebanon, OH</span>
+            <span class="area-tag">Lawrenceburg, IN</span>
+            <span class="area-tag">Centerville, OH</span>
+            <span class="area-tag">Ross, OH</span>
+            <span class="area-tag">Cleves, OH</span>
+            <span class="area-tag">Miamitown, OH</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo">Cherry <span>Digital</span> Pros</div>
+        <p>We are the 911 for Computer Repair. Serving Cincinnati &amp; the Tri-State Area for over 32 years.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services/Products</a></li>
+          <li><a href="managed.html">Managed Services</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>📞 <a href="tel:5135685568">513-568-5568</a></p>
+        <p>📍 Cincinnati, OH &amp; Tri-State Area</p>
+        <p style="margin-top:12px;">
+          <a href="https://sos.splashtop.com" target="_blank" rel="noopener" class="btn btn-red" style="font-size:0.82rem;padding:8px 16px;">Remote Support</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Cherry Digital Pros. All rights reserved. | Cincinnati, OH</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
